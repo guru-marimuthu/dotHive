@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "a785184a-c442-45b2-9d07-0ba2ed6b6285",
+		"name": "Go Rest api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "create",
+					"_postman_id": "05bee212-eef1-452c-9fe5-51cf5b9cfcd5",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"work\",\r\n    \"last_name\": null,\r\n    \"age\": null,\r\n    \"email\":\"new@gmail.com\",\r\n    \"password\": \"hihiuhih\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/api/v1/users/"
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"_postman_id": "8a39048e-94cf-485d-ab71-907f523f9c64",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/api/v1/users/"
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"_postman_id": "dc46f138-403a-41a4-9865-55bc97193a5c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/api/v1/users/081b035a-f0b3-4a7c-a87f-d9de1f505c51"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"_postman_id": "99290654-b1b1-4b8c-8988-ae76024289ef",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\"age\":\"40\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/api/v1/users/ac372cbb-9391-45e1-bd8a-5f60c39632d8"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"_postman_id": "71b72e66-66a3-4b1b-9394-5e56497cdecc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8000/api/v1/users/1"
+					},
+					"response": []
+				},
+				{
+					"name": "delete (p)",
+					"_postman_id": "8a81bd7e-3cf9-46ff-abff-926d62be8c3e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8000/api/v1/users/"
+					},
+					"response": []
+				},
+				{
+					"name": "greet",
+					"_postman_id": "e6fae27b-a9e0-4541-af5f-13f104eab2f7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/users/greet?myname=to dotworld technologies",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"users",
+								"greet"
+							],
+							"query": [
+								{
+									"key": "myname",
+									"value": "to dotworld technologies"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "wish",
+					"_postman_id": "682598ed-9e4b-464a-8447-21c36f3b85e7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/users/wish"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "3cdadd3e-c70e-44dc-ae0a-37b73d44656d"
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "create",
+					"_postman_id": "035daf6f-e3e6-4e03-accb-787162d6253b",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\":\"1cdf148b-f170-41c3-8252-e5cf709ae8a3\",\r\n    \"title\":\"the secret of chambers\",\r\n    \"description\":\"this is 2 part of harry potter movie based on navel\"\r\n\r\n\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/api/v1/posts/"
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"_postman_id": "b787b15e-b726-4de8-8c33-0411c3d97ac2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/api/v1/posts/"
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"_postman_id": "f1d7617f-1d0d-4c19-915a-b856c8e3394a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/api/v1/posts/081b035a-f0b3-4a7c-a87f-d9de1f505c51"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"_postman_id": "36947252-9f61-4db7-baad-7aaf8df39a05",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\"age\":\"40\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/api/v1/posts/ac372cbb-9391-45e1-bd8a-5f60c39632d8"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"_postman_id": "9912bab9-d39e-42f5-8ba2-7ab8852c9cc1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8000/api/v1/posts/"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "ce92dd08-a6f8-4924-9e53-73e01bb0dda5"
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "create",
+					"_postman_id": "1b834bb9-6a49-437f-a770-5caeb9d3c006",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\":\"1cdf148b-f170-41c3-8252-e5cf709ae8a3\",\r\n    \"title\":\"the secret of chambers\",\r\n    \"description\":\"this is 2 part of harry potter movie based on navel\"\r\n\r\n\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/api/v1/posts/"
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"_postman_id": "ffe6bda5-cc37-4231-99f9-47592d9dc24b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/api/v1/posts/"
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"_postman_id": "a85020bb-d17d-468e-abd8-9d6bef36bdcb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/api/v1/posts/081b035a-f0b3-4a7c-a87f-d9de1f505c51"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"_postman_id": "6ecfe977-6356-4fbe-a78d-cf7b6889b3ed",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\"age\":\"40\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/api/v1/posts/ac372cbb-9391-45e1-bd8a-5f60c39632d8"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"_postman_id": "60afd40d-419b-4b38-b431-624d02e05870",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8000/api/v1/posts/"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "92a16a93-ce43-45f6-ad87-b73e5fab35ef"
+		}
+	]
+}
